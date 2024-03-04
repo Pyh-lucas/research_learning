@@ -19,12 +19,40 @@ decomposition：降维算法
 
 ### 3、编码
 [[01-编码]]
-
-
-### 4、相关性分析
 [[03-相关性分析]]
 
+### 4、相关性分析
 
+[[04-缺失值处理]]
 
 ### 5、特征选择&特征提取
 [[05-特征选择vs特征提取]]
+
+#### Trick
+
+查看连续性数据的数据分布，类别型数据的不平衡现象
+	![Pasted image 20240229144721](https://peiyihan-1324725457.cos.ap-beijing.myqcloud.com/Obsidian/202403040851890.png?imageSlim)
+### insights[](https://www.kaggle.com/code/shadechen/eda-otuna-ensemble-lgb-xgb-cat#insights)
+---
+1. Some categorical feature columns is quite imbalanced (Sex), consider resampling to balance the data.
+2. ==Some numerical feature have symtoms of Negative skewed or positive skewed, consider applying following:==
+    1. ==data transformation==
+    2. ==outlier removal==
+    3. ==data normalization==
+    4. ==Reduce data diemension==
+3. Some categorical feature can apply feature engineering to transformed as bool type(example: Y as True, N as False)
+
+### 6、模型评估
+[[06-模型评估]]
+
+### 7、不平衡
+[[07-不平衡数据集]]
+
+### 8、参数调优
+[[08-参数调优]]
+
+### 9、离散化
+[[09-离散化]]
+
+### 10、特征工程
+[[10-特征工程]]
